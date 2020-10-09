@@ -16,6 +16,11 @@
                         <button class="change-devoured btn btn-warning" data-id="{{id}}" data-newdevoured="{{devoured}}">
                         Devour
                         </button>
+        
+                        <button class="deleteBurger btn btn-warning" data-id="{{id}}">
+                        Delete
+                        </button>
+                       
                 </li>
                 {{/unless}}
             {{/each}}
@@ -30,6 +35,11 @@
                 {{#if devoured}}
                 <li>
                     {{burger_name}}
+                        
+                        <button  class="deleteBurger btn btn-warning" data-id="{{id}}">
+                        Delete
+                        </button>
+                        
                 </li>
                 {{/if}}
             {{/each}}

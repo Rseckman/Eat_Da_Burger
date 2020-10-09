@@ -7,7 +7,7 @@ var burger = {
       cb(res);
     });
   },
-  // The variables cols and vals are arrays.
+
   insertOne: function(cols, vals, cb) {
     orm.insertOne("burgers", cols, vals, function(res) {
       cb(res);
@@ -17,7 +17,13 @@ var burger = {
     orm.updateOne(condition, function(res) {
       cb(res);
     });
+  },
+  deleteOne: function(condition, cb) {
+    orm.deleteOne(condition, function(res){
+      cb(res);
+    })
   }
+
 };
 
 module.exports = burger;

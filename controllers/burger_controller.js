@@ -19,7 +19,6 @@ router.post("/api/burgers", function(req, res) {
     ], [
         req.body.name, req.body.devoured
     ], function(result) {
-        // Send back the ID of the new quote
         res.json({ id: result.insertId });
     });
 });
@@ -39,6 +38,15 @@ router.put("/api/burgers/:id", function(req, res) {
     });
 });
 
-  // Export routes for server.js to use.
+router.delete("/api/burgers/:id", function(req, res){
+    var condition = req.params.id;
+
+    burger.deleteOne(condition, function(result){
+        
+        res.status(200).end();
+        
+    })
+})
+
   module.exports = router;
   
