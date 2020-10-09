@@ -13,7 +13,7 @@
                 {{#unless devoured}}
                 <li>
                     {{burger_name}}
-                        <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+                        <button class="change-devoured btn btn-warning" data-id="{{id}}" data-newdevoured="{{devoured}}">
                         Devour
                         </button>
                 </li>
@@ -43,11 +43,11 @@
 
             <div class="form-group">
                 <label for="bur">Burger Name</label>
-                <input type="text" id="bur" name="name">
+                <textarea class="form-control" id="bur" rows="2" name="name"></textarea>
             </div>
 
 
-            <button type="submit">Add Burger</button>
+            <button class="btn btn-primary" type="submit">Add Burger</button>
             </form>
     </div>
 </div>
