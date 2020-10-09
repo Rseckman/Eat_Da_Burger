@@ -8,7 +8,7 @@
   ## Table of Contents
 
   * [Installation](#Installation)
-  * [Usage](#Usage)git 
+  * [Usage](#Usage)
   * [Questions](#Questions)
   
   ##  Installation
